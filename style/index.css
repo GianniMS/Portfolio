@@ -1,0 +1,794 @@
+/*General elements*/
+* body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'DM Sans', sans-serif;
+    overflow: hidden;
+}
+
+/* Fonts: font-family: 'DM Sans', sans-serif; font-family: 'Archivo Black', sans-serif; */
+
+
+/* Default styles for all screen sizes */
+/* Color palette: #faf6f0 #f4dfc8 #000000 #8c6655 */
+
+/* Small phones (up to 576px) */
+@media only screen and (max-width: 576px) {
+
+    * main {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        background: linear-gradient(135deg, #FFFFFF, #E1F4F3);
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header {
+        height: 10vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        background: green;
+    }
+
+    .container {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Card elements */
+    .card {
+        width: 80%;
+        height: 60vh;
+
+        border-radius: 15px;
+        perspective: 1000px;
+    }
+
+    .card:hover .cardInner {
+        transform: rotateY(180deg);
+    }
+
+    .cardInner {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        transition: transform 1s;
+        transform-style: preserve-3d;
+
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .cardFront {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+
+        position: absolute;
+        backface-visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .coverCard {
+        width: 100%;
+        height: 60vh;
+
+        object-fit: cover;
+        border-radius: 15px;
+
+        display: block;
+    }
+
+    .frontText {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        width: 80%;
+
+        padding: 2vh 1.5vh;
+    }
+
+    .frontTitle {
+        font-weight: bold;
+        color: white;
+        font-size: 6vw;
+
+        margin-bottom: -2vh;
+    }
+
+    .frontDesc {
+        color: white;
+        font-size: 5vw;
+    }
+
+    .frontButtonHov {
+        display: none;
+    }
+
+    .frontButtonClick {
+        width: 30vw;
+        border: solid 1px white;
+        background: transparent;
+        border-radius: 50px;
+        padding: 5px;
+
+        cursor: pointer;
+
+        font-size: 5vw;
+        color: white;
+    }
+
+
+    .cardBack {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+
+        backface-visibility: hidden;
+        position: absolute;
+
+        background: white;
+        color: black;
+
+        transform: rotateY(180deg);
+    }
+
+    .backText {
+        padding: 2vh 4vh;
+        height: 60vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .backTitle {
+        color: black;
+        font-weight: bold;
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 13vw;
+    }
+
+    .btSecond {
+        color: #706C61;
+    }
+
+    .backDesc {
+        display: flex;
+        flex-direction: column;
+
+        text-align: start;
+        font-size: 5vw;
+    }
+
+    .mailLink {
+        text-decoration: underline;
+        font-weight: bold;
+        color: black;
+    }
+
+    .backContact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bcIcons {
+        margin-top: 2vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .bcIcon {
+        padding: 5px;
+        width: 4vh;
+        height: 4vh;
+    }
+
+    .buttonCV {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 4vw;
+        width: 80%;
+
+        color: white;
+        background-image: linear-gradient(to left, #313131, black, #313131);
+
+        padding: 10px;
+
+        border-radius: 50px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .bcIcons {
+
+    }
+
+}
+
+/* Tablets/iPads (577px to 768px) */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+
+    .container {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(135deg, #FFFFFF, #E1F4F3);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 50%;
+        height: 60vh;
+
+        border-radius: 15px;
+        perspective: 1000px;
+    }
+
+    .card:hover .cardInner {
+        transform: rotateY(180deg);
+    }
+
+    .cardInner {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        transition: transform 1s;
+        transform-style: preserve-3d;
+
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .cardFront {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+
+        position: absolute;
+        backface-visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .coverCard {
+        width: 100%;
+        height: 60vh;
+
+        object-fit: cover;
+        border-radius: 15px;
+
+        display: block;
+    }
+
+    .frontText {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        width: 80%;
+
+        padding: 2vh 1.5vh;
+    }
+
+    .frontTitle {
+        font-weight: bold;
+        color: white;
+        font-size: 4vw;
+
+        margin-bottom: -2vh;
+    }
+
+    .frontDesc {
+        color: white;
+        font-size: 3vw;
+    }
+
+    .frontButtonHov {
+        display: none;
+    }
+
+    .frontButtonClick {
+        width: 30vw;
+        border: solid 1px white;
+        background: transparent;
+        border-radius: 50px;
+        padding: 5px;
+
+        cursor: pointer;
+
+        font-size: 5vw;
+        color: white;
+    }
+
+    .cardBack {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+
+        backface-visibility: hidden;
+        position: absolute;
+
+        background: white;
+        color: black;
+
+        transform: rotateY(180deg);
+    }
+
+    .backText {
+        padding: 2vh 4vh;
+        height: 60vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .backTitle {
+        color: black;
+        font-weight: bold;
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 7vw;
+    }
+
+    .btSecond {
+        color: #706C61;
+    }
+
+    .backDesc {
+        display: flex;
+        flex-direction: column;
+
+        text-align: start;
+        font-size: 3vw;
+    }
+
+    .mailLink {
+        text-decoration: underline;
+        font-weight: bold;
+        color: black;
+    }
+
+    .backContact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bcIcons {
+        margin-top: 2vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .bcIcon {
+        padding: 5px;
+        width: 4vh;
+        height: 4vh;
+    }
+
+    .buttonCV {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 2vw;
+        width: 60%;
+
+        color: white;
+        background-image: linear-gradient(to left, #313131, black, #313131);
+
+        padding: 10px;
+
+        border-radius: 50px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .bcIcons {
+
+    }
+
+}
+
+/* Bigger phones (769px to 992px) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+
+    .container {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(135deg, #FFFFFF, #E1F4F3);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 50%;
+        height: 60vh;
+
+        border-radius: 15px;
+        perspective: 1000px;
+    }
+
+    .card:hover .cardInner {
+        transform: rotateY(180deg);
+    }
+
+    .cardInner {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        transition: transform 1s;
+        transform-style: preserve-3d;
+
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .cardFront {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+
+        position: absolute;
+        backface-visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .coverCard {
+        width: 100%;
+        height: 60vh;
+
+        object-fit: cover;
+        border-radius: 15px;
+
+        display: block;
+    }
+
+    .frontText {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        width: 80%;
+
+        padding: 2vh 1.5vh;
+    }
+
+    .frontTitle {
+        font-weight: bold;
+        color: white;
+        font-size: 4vw;
+
+        margin-bottom: -2vh;
+    }
+
+    .frontDesc {
+        color: white;
+        font-size: 3vw;
+    }
+
+    .frontButtonHov {
+        display: none;
+    }
+
+    .frontButtonClick {
+        width: 30vw;
+        border: solid 1px white;
+        background: transparent;
+        border-radius: 50px;
+        padding: 5px;
+
+        cursor: pointer;
+
+        font-size: 5vw;
+        color: white;
+    }
+
+    .cardBack {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+
+        backface-visibility: hidden;
+        position: absolute;
+
+        background: white;
+        color: black;
+
+        transform: rotateY(180deg);
+    }
+
+    .backText {
+        padding: 2vh 4vh;
+        height: 60vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .backTitle {
+        color: black;
+        font-weight: bold;
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 5vw;
+    }
+
+    .btSecond {
+        color: #706C61;
+    }
+
+    .backDesc {
+        display: flex;
+        flex-direction: column;
+
+        text-align: start;
+        font-size: 3vw;
+    }
+
+    .mailLink {
+        text-decoration: underline;
+        font-weight: bold;
+        color: black;
+    }
+
+    .backContact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bcIcons {
+        margin-top: 2vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .bcIcon {
+        padding: 5px;
+        width: 4vh;
+        height: 4vh;
+    }
+
+    .buttonCV {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 2vw;
+        width: 60%;
+
+        color: white;
+        background: black;
+
+        padding: 10px;
+        border-radius: 50px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .bcIcons {
+
+    }
+}
+
+/* Desktops (993px and above) */
+@media only screen and (min-width: 993px) {
+    * main {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        background: linear-gradient(135deg, #FFFFFF, #E1F4F3);
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 20%;
+        height: 70vh;
+
+        border-radius: 15px;
+        perspective: 1000px;
+    }
+
+    .card:hover .cardInner {
+        transform: rotateY(180deg);
+    }
+
+    .cardInner {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        transition: transform 1s;
+        transform-style: preserve-3d;
+
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .cardFront {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+
+        position: absolute;
+        backface-visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .coverCard {
+        width: 100%;
+        height: 70vh;
+
+        object-fit: cover;
+        border-radius: 15px;
+
+        display: block;
+    }
+
+    .frontText {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        padding: 2vh 1.5vh;
+    }
+
+    .frontTitle {
+        font-weight: bold;
+        color: white;
+        font-size: 1.6vw;
+
+        margin-bottom: -2vh;
+    }
+
+    .frontDesc {
+        color: white;
+        font-size: 1.2vw;
+    }
+
+    .frontButtonHov {
+        width: 8vw;
+        border: solid 1px white;
+        background: transparent;
+        border-radius: 50px;
+        padding: 5px;
+
+        cursor: pointer;
+
+        font-size: 1.2vw;
+        color: white;
+    }
+
+    .frontButtonClick {
+        display: none;
+    }
+
+    .cardBack {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+
+        backface-visibility: hidden;
+        position: absolute;
+
+        background: white;
+        color: black;
+
+        transform: rotateY(180deg);
+    }
+
+    .backText {
+        padding: 2vh 4vh;
+        height: 70vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .backTitle {
+        color: black;
+        font-weight: bold;
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 3vw;
+    }
+
+    .btSecond {
+        color: #706C61;
+    }
+
+    .backDesc {
+        display: flex;
+        flex-direction: column;
+
+        text-align: start;
+        font-size: 1.2vw;
+    }
+
+    .mailLink {
+        text-decoration: underline;
+        font-weight: bold;
+        color: black;
+    }
+
+    .backContact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bcIcons {
+        margin-top: 2vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .bcIcon {
+        padding: 6px;
+        width: 4vh;
+        height: 4vh;
+    }
+
+    .buttonCV {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1vw;
+        width: 60%;
+
+        text-transform: uppercase;
+        color: white;
+        background: black;
+        border-radius: 50px;
+
+        padding: 10px;
+
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .bcIcons {
+
+    }
+}
