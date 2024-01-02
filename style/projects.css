@@ -20,7 +20,7 @@
         width: 100%;
         height: 100vh;
         overflow: hidden;
-        background: linear-gradient(135deg, #FFFFFF, #E1F4F3);
+        background: linear-gradient(135deg, #F1EDE6, #D1C7BD);
 
         display: flex;
         flex-direction: column;
@@ -44,8 +44,9 @@
 
     #active:checked ~ .navScreen {
         clip-path: circle(75%);
-        background: rgba(255, 255, 255, 0.23);
+        background: rgba(203, 173, 141, 0.23);
         backdrop-filter: blur(9px);
+        -webkit-backdrop-filter: blur(9px);
     }
 
     #active:checked ~ .menuButton {
@@ -104,7 +105,7 @@
         width: 100%;
         height: 100vh;
         overflow: hidden;
-        background: linear-gradient(135deg, #FFFFFF, #E1F4F3);
+        background: linear-gradient(135deg, #F1EDE6, #D1C7BD);
 
         display: flex;
         flex-direction: column;
@@ -128,8 +129,9 @@
 
     #active:checked ~ .navScreen {
         clip-path: circle(75%);
-        background: rgba(255, 255, 255, 0.23);
+        background: rgba(203, 173, 141, 0.23);
         backdrop-filter: blur(9px);
+        -webkit-backdrop-filter: blur(9px);
     }
 
     #active:checked ~ .menuButton {
@@ -190,7 +192,7 @@
         width: 100%;
         height: 100vh;
         overflow: hidden;
-        background: linear-gradient(135deg, #FFFFFF, #E1F4F3);
+        background: linear-gradient(135deg, #F1EDE6, #D1C7BD);
 
         display: flex;
         flex-direction: column;
@@ -214,8 +216,9 @@
 
     #active:checked ~ .navScreen {
         clip-path: circle(75%);
-        background: rgba(255, 255, 255, 0.23);
+        background: rgba(203, 173, 141, 0.23);
         backdrop-filter: blur(9px);
+        -webkit-backdrop-filter: blur(9px);
     }
 
     #active:checked ~ .menuButton {
@@ -277,32 +280,63 @@
         width: 100%;
         height: 100vh;
         overflow: hidden;
-        background: linear-gradient(135deg, #FFFFFF, #E1F4F3);
+        background: linear-gradient(135deg, #F1EDE6, #D1C7BD);
     }
 
     .menuButton {
-        display: none;
+        z-index: 2;
+        position: absolute;
+        right: 25px;
+        top: 20px;
+        text-align: center;
+        line-height: 50px;
+        width: 50px;
+        font-size: 3vw;
+        cursor: pointer;
     }
 
     .check {
         display: none;
     }
 
-    .navScreen {
-        display: flex;
-        justify-content: center;
+    #active:checked ~ .navScreen {
+        clip-path: circle(75%);
+        background: rgba(203, 173, 141, 0.23);
+        backdrop-filter: blur(9px);
+        -webkit-backdrop-filter: blur(9px);
+    }
 
+    #active:checked ~ .menuButton {
+
+    }
+
+    #active:checked ~ .menuButton i:before {
+        content: "\f00d";
+    }
+
+    .navScreen {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        clip-path: circle(25px at calc(100% - 45px) 45px);
+        transition: all 0.5s ease-in-out;
+        z-index: 1;
     }
 
     .menu {
         display: flex;
-        flex-direction: row;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         list-style: none;
     }
 
     .menuItem {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding: 10px;
     }
 
     .menuItemText {
@@ -313,6 +347,7 @@
     }
 
     .container {
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
