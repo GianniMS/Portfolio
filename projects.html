@@ -21,6 +21,26 @@
             <li class="menuItem"><a href="projects.html" class="menuItemText">Projects</a></li>
         </ul>
     </section>
+    <section class="timeIcon">
+        <i class="fa fa-clock-o" aria-hidden="true"></i>
+    </section>
+    <section class="realTime">
+        <span id="time"></span>
+        <!--        Js for time display-->
+        <script>
+            let date = new Date();
+
+            // Get hours and minutes
+            let hours = date.getHours();
+            let minutes = date.getMinutes();
+
+            // Format the time with leading zeros
+            let currentTime = `${hours}:${String(minutes).padStart(2, '0')}`;
+
+            // Update the time element
+            document.getElementById("time").innerHTML = currentTime;
+        </script>
+    </section>
     <section class="container">
         (Projects) Under construction
     </section>

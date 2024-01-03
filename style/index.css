@@ -26,6 +26,26 @@
         flex-direction: column;
     }
 
+    .timeIcon {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        text-align: center;
+        line-height: 50px;
+        width: 50px;
+        font-size: 8vw;
+    }
+
+    .realTime {
+        position: absolute;
+        left: 65px;
+        top: 20px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 6vw;
+        font-weight: bold;
+    }
+
     .menuButton {
         z-index: 2;
         position: absolute;
@@ -286,6 +306,26 @@
 
         display: flex;
         flex-direction: column;
+    }
+
+    .timeIcon {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        text-align: center;
+        line-height: 50px;
+        width: 50px;
+        font-size: 8vw;
+    }
+
+    .realTime {
+        position: absolute;
+        left: 85px;
+        top: 25px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 6vw;
+        font-weight: bold;
     }
 
     .menuButton {
@@ -551,6 +591,26 @@
         flex-direction: column;
     }
 
+    .timeIcon {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        text-align: center;
+        line-height: 50px;
+        width: 50px;
+        font-size: 8vw;
+    }
+
+    .realTime {
+        position: absolute;
+        left: 85px;
+        top: 25px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 6vw;
+        font-weight: bold;
+    }
+
     .menuButton {
         z-index: 2;
         position: absolute;
@@ -807,6 +867,26 @@
         height: 100vh;
         overflow: hidden;
         background: linear-gradient(135deg, #F1EDE6, #D1C7BD);
+    }
+
+    .timeIcon {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        text-align: center;
+        line-height: 50px;
+        width: 50px;
+        font-size: 3vw;
+    }
+
+    .realTime {
+        position: absolute;
+        left: 80px;
+        top: 20px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 2vw;
+        font-weight: bold;
     }
 
     .menuButton {
