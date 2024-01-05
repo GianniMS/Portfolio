@@ -119,6 +119,27 @@
         font-weight: bold;
         font-size: 8vw;
     }
+
+    .contentDisplay {}
+
+    .contentGroup {}
+
+    .content {}
+
+    .embed {
+        width: 80%;
+        height: auto;
+    }
+
+    .contentDesc {
+
+    }
+
+    .contentTitle {
+
+    }
+
+    .contentAtt {}
 }
 
 /* Tablets/iPads (577px to 768px) */
