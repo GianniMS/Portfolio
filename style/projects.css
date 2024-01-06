@@ -18,7 +18,6 @@
 
     * main {
         width: 100%;
-        height: 200vh;
         overflow: hidden;
         display: flex;
         flex-direction: column;
@@ -120,36 +119,64 @@
         font-size: 8vw;
     }
 
-    .contentDisplay {}
+    .contentDisplay {
+    }
 
-    .contentGroup {}
+    .contentGroup {
+        display: flex;
+        flex-direction: column;
+    }
 
-    .content {}
+    .content {
+        margin-top: 3vh;
+    }
+
 
     .embed {
-        width: 80%;
-        height: auto;
+        width: 80vw;
+        height: 0;
+        padding-bottom: 40%;
+
+        position: relative;
+    }
+
+    * iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
     }
 
     .contentDesc {
-
+        display: flex;
+        justify-content: space-between;
     }
 
     .contentTitle {
-
+        font-size: 4vw;
+        font-weight: bold;
     }
 
-    .contentAtt {}
+    .contentAtt {
+        font-size: 4vw;
+    }
+
+    .textMore {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+
+    .tmLink {
+    }
 }
 
 /* Tablets/iPads (577px to 768px) */
 @media only screen and (min-width: 577px) and (max-width: 768px) {
     * main {
         width: 100%;
-        height: 200vh;
         overflow: hidden;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .timeIcon {
@@ -236,14 +263,66 @@
     }
 
     .container {
-        width: 100%;
-        height: 100vh;
-
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        margin-top: 12vh;
     }
+
+    .contTitle {
+        font-weight: bold;
+        font-size: 8vw;
+    }
+
+    .contentDisplay {
+    }
+
+    .contentGroup {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        margin-top: 3vh;
+        width: 80vw;
+    }
+
+    .embed {
+        width: 80vw;
+        height: 0;
+        padding-bottom: 40%;
+
+        position: relative;
+    }
+
+    * iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .contentDesc {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contentTitle {
+        font-size: 4vw;
+        font-weight: bold;
+    }
+
+    .contentAtt {
+        font-size: 4vw;
+    }
+
+    .textMore {
+        margin-top: 5vh;
+    }
+
+    .tmLink {
+    }
+
+
 }
 
 /* Bigger phones (769px to 992px) */
@@ -251,7 +330,6 @@
 
     * main {
         width: 100%;
-        height: 200vh;
         overflow: hidden;
         display: flex;
         flex-direction: column;
@@ -342,14 +420,66 @@
 
 
     .container {
-        width: 100%;
-        height: 100vh;
-
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        margin-top: 12vh;
     }
+
+    .contTitle {
+        font-weight: bold;
+        font-size: 8vw;
+    }
+
+    .contentDisplay {
+    }
+
+    .contentGroup {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        margin-top: 3vh;
+        width: 80vw;
+    }
+
+    .embed {
+        width: 80vw;
+        height: 0;
+        padding-bottom: 40%;
+
+        position: relative;
+    }
+
+    * iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .contentDesc {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contentTitle {
+        font-size: 4vw;
+        font-weight: bold;
+    }
+
+    .contentAtt {
+        font-size: 4vw;
+    }
+
+    .textMore {
+        margin-top: 5vh;
+    }
+
+    .tmLink {
+    }
+
+
 }
 
 
@@ -357,7 +487,6 @@
 @media only screen and (min-width: 993px) {
     * main {
         width: 100%;
-        height: 200vh;
         overflow: hidden;
         margin-top: 0;
     }
@@ -447,7 +576,67 @@
     }
 
     .container {
-
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 12vh;
     }
+
+    .contTitle {
+        font-weight: bold;
+        font-size: 8vw;
+    }
+
+    .contentDisplay {
+        width: 100vw;
+    }
+
+    .contentGroup {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .content {
+        margin-top: 3vh;
+        width: 40vw;
+    }
+
+    .embed {
+        width: 40vw;
+        height: 0;
+        padding-bottom: 40%;
+
+        position: relative;
+    }
+
+    * iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .contentDesc {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contentTitle {
+        font-size: 2vw;
+        font-weight: bold;
+    }
+
+    .contentAtt {
+        font-size: 2vw;
+    }
+
+    .textMore {
+        margin-top: 5vh;
+    }
+
+    .tmLink {
+    }
+
+
 
 }
