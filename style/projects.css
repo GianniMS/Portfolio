@@ -128,14 +128,14 @@
     }
 
     .content {
-        margin-top: 3vh;
+        margin-top: 4vh;
     }
 
 
     .embed {
         width: 80vw;
         height: 0;
-        padding-bottom: 40%;
+        padding-bottom: 55%;
 
         position: relative;
     }
@@ -149,6 +149,7 @@
     .contentDesc {
         display: flex;
         justify-content: space-between;
+        margin-top: 1vh;
     }
 
     .contentTitle {
@@ -163,9 +164,14 @@
     .textMore {
         margin-top: 5vh;
         margin-bottom: 5vh;
+        font-size: 4vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .tmLink {
+
     }
 }
 
@@ -283,14 +289,14 @@
     }
 
     .content {
-        margin-top: 3vh;
+        margin-top: 4vh;
         width: 80vw;
     }
 
     .embed {
         width: 80vw;
         height: 0;
-        padding-bottom: 40%;
+        padding-bottom: 55%;
 
         position: relative;
     }
@@ -302,6 +308,7 @@
     }
 
     .contentDesc {
+        margin-top: 1vh;
         display: flex;
         justify-content: space-between;
     }
@@ -317,12 +324,16 @@
 
     .textMore {
         margin-top: 5vh;
+        margin-bottom: 5vh;
+        font-size: 4vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .tmLink {
+
     }
-
-
 }
 
 /* Bigger phones (769px to 992px) */
@@ -440,14 +451,14 @@
     }
 
     .content {
-        margin-top: 3vh;
+        margin-top: 4vh;
         width: 80vw;
     }
 
     .embed {
         width: 80vw;
         height: 0;
-        padding-bottom: 40%;
+        padding-bottom: 55%;
 
         position: relative;
     }
@@ -459,6 +470,7 @@
     }
 
     .contentDesc {
+        margin-top: 1vh;
         display: flex;
         justify-content: space-between;
     }
@@ -474,12 +486,16 @@
 
     .textMore {
         margin-top: 5vh;
+        margin-bottom: 5vh;
+        font-size: 4vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .tmLink {
+
     }
-
-
 }
 
 
@@ -584,11 +600,11 @@
 
     .contTitle {
         font-weight: bold;
-        font-size: 8vw;
+        font-size: 4vw;
     }
 
     .contentDisplay {
-        width: 100vw;
+        width: 95vw;
     }
 
     .contentGroup {
@@ -598,14 +614,14 @@
     }
 
     .content {
-        margin-top: 3vh;
+        margin-top: 4vh;
         width: 40vw;
     }
 
     .embed {
         width: 40vw;
         height: 0;
-        padding-bottom: 40%;
+        padding-bottom: 55%;
 
         position: relative;
     }
@@ -617,6 +633,7 @@
     }
 
     .contentDesc {
+        margin-top: 1vh;
         display: flex;
         justify-content: space-between;
     }
@@ -632,11 +649,14 @@
 
     .textMore {
         margin-top: 5vh;
+        margin-bottom: 5vh;
+        font-size: 1.5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .tmLink {
+
     }
-
-
-
 }
