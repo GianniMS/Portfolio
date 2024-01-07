@@ -25,7 +25,8 @@
     }
 
     .timeIcon {
-        position: absolute;
+        z-index: 2;
+        position: fixed;
         left: 20px;
         top: 20px;
         text-align: center;
@@ -35,7 +36,8 @@
     }
 
     .realTime {
-        position: absolute;
+        z-index: 2;
+        position: fixed;
         left: 65px;
         top: 20px;
         text-align: center;
@@ -45,8 +47,8 @@
     }
 
     .menuButton {
-        z-index: 2;
-        position: absolute;
+        z-index: 4;
+        position: fixed;
         right: 20px;
         top: 20px;
         text-align: center;
@@ -82,7 +84,7 @@
         display: flex;
         clip-path: circle(25px at calc(100% - 45px) 45px);
         transition: all 0.5s ease-in-out;
-        z-index: 1;
+        z-index: 3;
     }
 
     .menu {
@@ -186,7 +188,8 @@
     }
 
     .timeIcon {
-        position: absolute;
+        position: fixed;
+        z-index: 2;
         left: 20px;
         top: 20px;
         text-align: center;
@@ -196,7 +199,8 @@
     }
 
     .realTime {
-        position: absolute;
+        position: fixed;
+        z-index: 2;
         left: 85px;
         top: 25px;
         text-align: center;
@@ -206,8 +210,8 @@
     }
 
     .menuButton {
-        z-index: 2;
-        position: absolute;
+        z-index: 4;
+        position: fixed;
         right: 20px;
         top: 20px;
         text-align: center;
@@ -243,7 +247,7 @@
         display: flex;
         clip-path: circle(25px at calc(100% - 45px) 45px);
         transition: all 0.5s ease-in-out;
-        z-index: 1;
+        z-index: 3;
     }
 
     .menu {
@@ -347,7 +351,8 @@
     }
 
     .timeIcon {
-        position: absolute;
+        position: fixed;
+        z-index: 2;
         left: 20px;
         top: 20px;
         text-align: center;
@@ -357,7 +362,8 @@
     }
 
     .realTime {
-        position: absolute;
+        position: fixed;
+        z-index: 2;
         left: 85px;
         top: 25px;
         text-align: center;
@@ -367,8 +373,8 @@
     }
 
     .menuButton {
-        z-index: 2;
-        position: absolute;
+        z-index: 4;
+        position: fixed;
         right: 20px;
         top: 20px;
         text-align: center;
@@ -404,7 +410,7 @@
         display: flex;
         clip-path: circle(25px at calc(100% - 45px) 45px);
         transition: all 0.5s ease-in-out;
-        z-index: 1;
+        z-index: 3;
     }
 
     .menu {
@@ -428,7 +434,6 @@
         color: black;
         font-size: 12vw;
     }
-
 
     .container {
         display: flex;
@@ -508,7 +513,8 @@
     }
 
     .timeIcon {
-        position: absolute;
+        position: fixed;
+        z-index: 2;
         left: 20px;
         top: 20px;
         text-align: center;
@@ -518,7 +524,8 @@
     }
 
     .realTime {
-        position: absolute;
+        position: fixed;
+        z-index: 2;
         left: 80px;
         top: 20px;
         text-align: center;
@@ -528,8 +535,8 @@
     }
 
     .menuButton {
-        z-index: 2;
-        position: absolute;
+        z-index: 4;
+        position: fixed;
         right: 25px;
         top: 20px;
         text-align: center;
@@ -566,7 +573,7 @@
         overflow: hidden;
         clip-path: circle(25px at calc(100% - 45px) 45px);
         transition: all 0.5s ease-in-out;
-        z-index: 1;
+        z-index: 3;
     }
 
     .menu {
