@@ -29,14 +29,16 @@
         <span id="time"></span>
         <!--        Js for time display-->
         <script>
+            // Specify the timezone as 'UTC' with offset +1
+            let options = { timeZone: 'UTC', hour12: false, hour: 'numeric', minute: 'numeric' };
+
             let date = new Date();
 
-            // Get hours and minutes
-            let hours = date.getHours();
-            let minutes = date.getMinutes();
+            // Adjust for daylight saving time
+            date.setUTCHours(date.getUTCHours() + 1);
 
-            // Format the time with leading zeros
-            let currentTime = `${hours}:${String(minutes).padStart(2, '0')}`;
+            // Get the time in UTC+1 timezone
+            let currentTime = new Intl.DateTimeFormat('en-US', options).format(date);
 
             // Update the time element
             document.getElementById("time").innerHTML = currentTime;
