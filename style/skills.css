@@ -4,14 +4,8 @@
     padding: 0;
     overflow: auto;
     font-family: 'DM Sans', sans-serif;
-    background: linear-gradient(135deg, #F1EDE6, #D1C7BD);
+    background: linear-gradient(135deg, #FCFCFD, #E8ECEF);
 }
-
-/* Fonts: font-family: 'DM Sans', sans-serif; font-family: 'Archivo Black', sans-serif; */
-
-
-/* Default styles for all screen sizes */
-/* Color palette: #faf6f0 #f4dfc8 #000000 #8c6655 */
 
 /* Small phones (up to 576px) */
 @media only screen and (max-width: 576px) {
@@ -23,26 +17,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    .timeIcon {
-        position: absolute;
-        left: 20px;
-        top: 20px;
-        text-align: center;
-        line-height: 50px;
-        width: 50px;
-        font-size: 8vw;
-    }
-
-    .realTime {
-        position: absolute;
-        left: 65px;
-        top: 20px;
-        text-align: center;
-        line-height: 50px;
-        font-size: 6vw;
-        font-weight: bold;
     }
 
     .menuButton {
@@ -63,7 +37,7 @@
 
     #active:checked ~ .navScreen {
         clip-path: circle(75%);
-        background: rgba(203, 173, 141, 0.23);
+        background: rgba(232,236,239, 0.23);
         backdrop-filter: blur(9px);
         -webkit-backdrop-filter: blur(9px);
     }
@@ -82,7 +56,7 @@
         width: 100%;
         display: flex;
         clip-path: circle(25px at calc(100% - 45px) 45px);
-        transition: all 0.5s ease-in-out;
+        transition: all 0.4s ease-in-out;
         z-index: 1;
     }
 
@@ -131,26 +105,6 @@
         flex-direction: column;
     }
 
-    .timeIcon {
-        position: absolute;
-        left: 20px;
-        top: 20px;
-        text-align: center;
-        line-height: 50px;
-        width: 50px;
-        font-size: 8vw;
-    }
-
-    .realTime {
-        position: absolute;
-        left: 85px;
-        top: 25px;
-        text-align: center;
-        line-height: 50px;
-        font-size: 6vw;
-        font-weight: bold;
-    }
-
     .menuButton {
         z-index: 2;
         position: absolute;
@@ -169,7 +123,7 @@
 
     #active:checked ~ .navScreen {
         clip-path: circle(75%);
-        background: rgba(203, 173, 141, 0.23);
+        background: rgba(232,236,239, 0.23);
         backdrop-filter: blur(9px);
         -webkit-backdrop-filter: blur(9px);
     }
@@ -188,7 +142,7 @@
         width: 100%;
         display: flex;
         clip-path: circle(25px at calc(100% - 45px) 45px);
-        transition: all 0.5s ease-in-out;
+        transition: all 0.4s ease-in-out;
         z-index: 1;
     }
 
@@ -236,26 +190,6 @@
         flex-direction: column;
     }
 
-    .timeIcon {
-        position: absolute;
-        left: 20px;
-        top: 20px;
-        text-align: center;
-        line-height: 50px;
-        width: 50px;
-        font-size: 8vw;
-    }
-
-    .realTime {
-        position: absolute;
-        left: 85px;
-        top: 25px;
-        text-align: center;
-        line-height: 50px;
-        font-size: 6vw;
-        font-weight: bold;
-    }
-
     .menuButton {
         z-index: 2;
         position: absolute;
@@ -274,7 +208,7 @@
 
     #active:checked ~ .navScreen {
         clip-path: circle(75%);
-        background: rgba(203, 173, 141, 0.23);
+        background: rgba(232,236,239, 0.23);
         backdrop-filter: blur(9px);
         -webkit-backdrop-filter: blur(9px);
     }
@@ -293,7 +227,7 @@
         width: 100%;
         display: flex;
         clip-path: circle(25px at calc(100% - 45px) 45px);
-        transition: all 0.5s ease-in-out;
+        transition: all 0.4s ease-in-out;
         z-index: 1;
     }
 
@@ -341,26 +275,6 @@
         margin-top: 0;
     }
 
-    .timeIcon {
-        position: absolute;
-        left: 20px;
-        top: 20px;
-        text-align: center;
-        line-height: 50px;
-        width: 50px;
-        font-size: 3vw;
-    }
-
-    .realTime {
-        position: absolute;
-        left: 80px;
-        top: 20px;
-        text-align: center;
-        line-height: 50px;
-        font-size: 2vw;
-        font-weight: bold;
-    }
-
     .menuButton {
         z-index: 2;
         position: absolute;
@@ -379,7 +293,7 @@
 
     #active:checked ~ .navScreen {
         clip-path: circle(75%);
-        background: rgba(203, 173, 141, 0.23);
+        background: rgba(232,236,239, 0.23);
         backdrop-filter: blur(9px);
         -webkit-backdrop-filter: blur(9px);
     }
@@ -399,7 +313,7 @@
         display: flex;
         overflow: hidden;
         clip-path: circle(25px at calc(100% - 45px) 45px);
-        transition: all 0.5s ease-in-out;
+        transition: all 0.4s ease-in-out;
         z-index: 1;
     }
 

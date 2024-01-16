@@ -2,7 +2,7 @@
 * body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #F1EDE6, #D1C7BD);
+    background: linear-gradient(135deg, #FCFCFD, #E8ECEF);
     font-family: 'DM Sans', sans-serif;
     overflow: hidden;
 }
@@ -10,9 +10,6 @@
 .btSecond {
     color: #A48374;
 }
-
-/* Fonts: font-family: 'DM Sans', sans-serif; font-family: 'Archivo Black', sans-serif; */
-/* Color palette: #faf6f0 #f4dfc8 #000000 #8c6655 */
 
 /* Small phones (up to 576px) */
 @media only screen and (max-width: 576px) {
@@ -63,7 +60,7 @@
 
     #active:checked ~ .navScreen {
         clip-path: circle(75%);
-        background: rgba(203, 173, 141, 0.23);
+        background: rgba(232,236,239, 0.23);
         backdrop-filter: blur(9px);
         -webkit-backdrop-filter: blur(9px);
     }
@@ -82,7 +79,7 @@
         width: 100%;
         display: flex;
         clip-path: circle(25px at calc(100% - 45px) 45px);
-        transition: all 0.5s ease-in-out;
+        transition: all 0.4s ease-in-out;
         z-index: 1;
     }
 
@@ -339,7 +336,7 @@
 
     #active:checked ~ .navScreen {
         clip-path: circle(75%);
-        background: rgba(203, 173, 141, 0.23);
+        background: rgba(232,236,239, 0.23);
         backdrop-filter: blur(9px);
         -webkit-backdrop-filter: blur(9px);
     }
@@ -358,7 +355,7 @@
         width: 100%;
         display: flex;
         clip-path: circle(25px at calc(100% - 45px) 45px);
-        transition: all 0.5s ease-in-out;
+        transition: all 0.4s ease-in-out;
         z-index: 1;
     }
 
@@ -616,7 +613,7 @@
 
     #active:checked ~ .navScreen {
         clip-path: circle(75%);
-        background: rgba(203, 173, 141, 0.23);
+        background: rgba(232,236,239, 0.23);
         backdrop-filter: blur(9px);
         -webkit-backdrop-filter: blur(9px);
     }
@@ -635,7 +632,7 @@
         width: 100%;
         display: flex;
         clip-path: circle(25px at calc(100% - 45px) 45px);
-        transition: all 0.5s ease-in-out;
+        transition: all 0.4s ease-in-out;
         z-index: 1;
     }
 
@@ -889,7 +886,7 @@
 
     #active:checked ~ .navScreen {
         clip-path: circle(75%);
-        background: rgba(203, 173, 141, 0.23);
+        background: rgba(232,236,239, 0.23);
         backdrop-filter: blur(9px);
         -webkit-backdrop-filter: blur(9px);
     }
@@ -908,7 +905,7 @@
         width: 100%;
         display: flex;
         clip-path: circle(25px at calc(100% - 45px) 45px);
-        transition: all 0.5s ease-in-out;
+        transition: all 0.4s ease-in-out;
         z-index: 1;
     }
 

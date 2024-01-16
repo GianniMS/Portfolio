@@ -29,19 +29,30 @@
         <span id="time"></span>
         <!--        Js for time display-->
         <script>
-            // Specify the timezone as 'UTC' with offset +1
-            let options = { timeZone: 'UTC', hour12: false, hour: 'numeric', minute: 'numeric' };
+            function updateClock() {
+                // Get the current time in UTC
+                let now = new Date();
 
-            let date = new Date();
+                // Set Amsterdam time zone offset (+1)
+                let amsterdamOffset = 60; // in minutes
+                let amsterdamTime = new Date(now.getTime() + amsterdamOffset * 60000);
 
-            // Adjust for daylight saving time
-            date.setUTCHours(date.getUTCHours() + 1);
+                // Adjust for one hour difference winter time
+                amsterdamTime.setHours(amsterdamTime.getHours() - 1);
 
-            // Get the time in UTC+1 timezone
-            let currentTime = new Intl.DateTimeFormat('en-US', options).format(date);
+                // Format hours, minutes
+                let hours = ('0' + amsterdamTime.getHours()).slice(-2);
+                let minutes = ('0' + amsterdamTime.getMinutes()).slice(-2);
 
-            // Update the time element
-            document.getElementById("time").innerHTML = currentTime;
+                // Display the time
+                document.getElementById('time').textContent = hours + ':' + minutes;
+            }
+
+            // Update the clock every second
+            setInterval(updateClock, 1000);
+
+            // Initial call to display the clock immediately
+            updateClock();
         </script>
     </section>
     <section class="container">
