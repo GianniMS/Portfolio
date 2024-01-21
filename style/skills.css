@@ -12,8 +12,7 @@
 
     * main {
         width: 100%;
-        height: 100vh;
-        overflow: hidden;
+        overflow: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -21,7 +20,7 @@
 
     .menuButton {
         z-index: 2;
-        position: absolute;
+        position: fixed;
         right: 20px;
         top: 20px;
         text-align: center;
@@ -90,6 +89,13 @@
         width: 100%;
     }
 
+    .cover {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .contTitle {
         font-weight: bold;
         font-size: 8vw;
@@ -97,28 +103,83 @@
     }
 
     .skillCard {
+        margin-bottom: 5vh;
         width: 80%;
-        height: 60vh;
-        background-color: black;
+        height: 70vh;
+        background-color: white;
         border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
 
+    .scTop {
+        height: 40%;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
+    .topImage {
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+
+    .scTitle {
+        color: white;
+        font-size: 8vw;
+        font-weight: bold;
+        position: absolute;
+    }
+
+    .scBottom {
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .scDesc {
+        text-align: center;
+        font-size: 4.4vw;
+
+    }
+
+    .ltCover {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lineText {
+        border-bottom: 2px solid black;
+        width: 60%;
+    }
+
+    .scSkills {
+        text-align: center;
+        font-size: 4.4vw;
+    }
+
+    .scsBold {
+        font-weight: bold;
+    }
 }
 
 /* Tablets/iPads (577px to 768px) */
 @media only screen and (min-width: 577px) and (max-width: 768px) {
     * main {
         width: 100%;
-        height: 100vh;
-        overflow: hidden;
+        overflow: auto;
         display: flex;
         flex-direction: column;
     }
 
     .menuButton {
         z-index: 2;
-        position: absolute;
+        position: fixed;
         right: 20px;
         top: 20px;
         text-align: center;
@@ -179,13 +240,19 @@
         font-size: 12vw;
     }
 
-
     .container {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 12vh;
         width: 100%;
+    }
+
+    .cover {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .contTitle {
@@ -195,10 +262,68 @@
     }
 
     .skillCard {
-        width: 50%;
-        height: 60vh;
-        background-color: black;
+        margin-bottom: 5vh;
+        width: 80%;
+        height: 70vh;
+        background-color: white;
         border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .scTop {
+        height: 40%;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .topImage {
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+
+    .scTitle {
+        color: white;
+        font-size: 8vw;
+        font-weight: bold;
+        position: absolute;
+    }
+
+    .scBottom {
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .scDesc {
+        text-align: center;
+        font-size: 4.3vw;
+
+    }
+
+    .ltCover {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lineText {
+        border-bottom: 2px solid black;
+        width: 60%;
+    }
+
+    .scSkills {
+        text-align: center;
+        font-size: 4.3vw;
+    }
+
+    .scsBold {
+        font-weight: bold;
     }
 }
 
@@ -207,15 +332,14 @@
 
     * main {
         width: 100%;
-        height: 100vh;
-        overflow: hidden;
+        overflow: auto;
         display: flex;
         flex-direction: column;
     }
 
     .menuButton {
         z-index: 2;
-        position: absolute;
+        position: fixed;
         right: 20px;
         top: 20px;
         text-align: center;
@@ -284,6 +408,13 @@
         width: 100%;
     }
 
+    .cover {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .contTitle {
         font-weight: bold;
         font-size: 8vw;
@@ -291,10 +422,68 @@
     }
 
     .skillCard {
-        width: 50%;
-        height: 60vh;
-        background-color: black;
+        margin-bottom: 5vh;
+        width: 80%;
+        height: 70vh;
+        background-color: white;
         border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .scTop {
+        height: 40%;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .topImage {
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+
+    .scTitle {
+        color: white;
+        font-size: 8vw;
+        font-weight: bold;
+        position: absolute;
+    }
+
+    .scBottom {
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .scDesc {
+        text-align: center;
+        font-size: 4.3vw;
+
+    }
+
+    .ltCover {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lineText {
+        border-bottom: 2px solid black;
+        width: 60%;
+    }
+
+    .scSkills {
+        text-align: center;
+        font-size: 4.3vw;
+    }
+
+    .scsBold {
+        font-weight: bold;
     }
 }
 
