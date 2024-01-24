@@ -111,16 +111,14 @@
         margin-top: 4vh;
     }
 
-
     .embed {
         width: 80vw;
         height: 0;
         padding-bottom: 55%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
         position: relative;
     }
+
 
     .loading {
         z-index: -2;
@@ -445,6 +443,7 @@
 
         position: relative;
     }
+
 
     .loading {
         z-index: -2;
